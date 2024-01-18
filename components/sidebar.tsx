@@ -37,7 +37,7 @@ export const Sidebar = () => {
   return (
     <div
       ref={sidebarRef}
-      className="transition-all h-full flex flex-col gap-2"
+      className="transition-all h-full flex flex-col gap-2 w-[300px]"
     >
       <div className="rounded-md bg-[var(--c-bg)]">
         <ul className="px-3 py-1">

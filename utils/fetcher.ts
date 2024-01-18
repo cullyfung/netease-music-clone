@@ -23,7 +23,7 @@ fetcher.interceptors.response.use((response) => {
   if (data && data.status === 'error') {
     throw new Error(data.message);
   }
-  return response;
+  return response.data;
 });
 
 export { fetcher };

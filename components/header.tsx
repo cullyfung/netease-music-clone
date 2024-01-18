@@ -16,7 +16,7 @@ export const Header: FC<PropsWithChildren<HeaderProps>> = ({ children }) => {
   const router = useRouter();
 
   return (
-    <>
+    <main className="flex-1 flex flex-col overflow-x-hidden overflow-y-auto">
       <div className="h-[64px] bg-transparent w-full px-4 py-5 flex flex-row items-center">
         <div className="flex gap-2 items-center">
           <Button
@@ -43,6 +43,6 @@ export const Header: FC<PropsWithChildren<HeaderProps>> = ({ children }) => {
         </div>
       </div>
       {children}
-    </>
+    </main>
   );
 };

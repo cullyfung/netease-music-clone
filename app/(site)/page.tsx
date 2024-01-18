@@ -2,7 +2,7 @@ import { Banner } from './_components/banner';
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col">
       <Banner />
     </div>
   );

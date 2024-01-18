@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: '**'
+      }
+    ],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy:
+      "default-src 'self'; script-src 'none'; sandbox; style-src 'unsafe-inline';"
+  }
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
